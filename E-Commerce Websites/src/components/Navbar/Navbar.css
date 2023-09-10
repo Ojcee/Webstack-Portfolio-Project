@@ -1,0 +1,63 @@
+.nav-container{
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10%;
+    padding: 0 2rem;
+    height: 80px;
+    background: #fff;
+    /* width: 100%; */
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.search-input{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.search-input input{
+    padding: 5px;
+    padding-left: 65%;
+    width: 100px;
+    outline: none;
+}
+
+.search-input img{
+    position: absolute;
+    left: 45%;
+}
+
+.nav-right{
+    display: flex;
+    gap: 5rem;
+}
+
+.nav-language{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-btn{
+    display: flex;
+    gap: 20px;
+}
+
+.nav-btn button{
+    border-radius: 8px;
+    border: none;
+    padding: 12px 48px;
+}
+
+.nav-btn-one{
+    color: #8A33FD;
+}
+.nav-btn-two{
+    background: #8A33FD;
+    color: #fff;
+}
