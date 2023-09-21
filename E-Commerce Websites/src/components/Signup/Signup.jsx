@@ -25,9 +25,14 @@ const Signup = () => {
         {/* <div>
 
         </div> */}
-        <input type="email" />
-        <input type="password" />
+        <label htmlFor="email">Email Address</label>
+        <input name="email" id="email" type="email" />
+        <label htmlFor="password">Password</label>
+        <input name="password" id="password" type="password" />
+        <button className="form-btn">Sign Up</button>
       </div>
+
+      <p>Already have an account? Login</p>
     </AuthLayout>
   );
 };

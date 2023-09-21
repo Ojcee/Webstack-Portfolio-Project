@@ -1,0 +1,22 @@
+.stroke{
+    width: 6px;
+    height: 30px;
+    border-radius: 10px;
+    background: #8A33FD;
+}
+
+.home-header-container{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+h3{
+    color: #3C4242;
+    font-family: Core Sans C;
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 33.5px; /* 98.529% */
+    letter-spacing: 0.68px;
+}

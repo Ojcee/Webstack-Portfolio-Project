@@ -7,7 +7,19 @@
 }
 
 .auth-layout-right{
+    display: flex;
+    flex-direction: column;
     width: 50%;
     height: 100%;
     padding: 3rem;
+}
+
+
+@media screen and (max-width: 768px) {
+    .auth-layout-left{
+        display: none;
+    }
+    .auth-layout-right{
+        width: 100%;
+    }
 }

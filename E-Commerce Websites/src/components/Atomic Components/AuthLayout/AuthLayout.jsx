@@ -13,7 +13,7 @@ const AuthLayout = ({ children }) => {
 
   return (
     <div className={"auth-layout-container"}>
-      <div style={AUTHLEFTSTYLES}></div>
+      <div className="auth-layout-left" style={AUTHLEFTSTYLES}></div>
       <div className={"auth-layout-right"}>{children}</div>
     </div>
   );
