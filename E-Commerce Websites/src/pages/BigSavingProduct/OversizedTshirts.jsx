@@ -25,9 +25,7 @@ const OversizedTshirts = () => {
   ];
   return (
     <>
-      <SEO
-        title={`Online Shopping Oversized T-Shirts - Euphoria`}
-      />
+      <SEO title={`Online Shopping Oversized T-Shirts -OjceeNiches`} />
       <section className="w-full h-full flex flex-col items-start justify-start px-5 xl:px-10 py-10 gap-10 ">
         <header className="w-full h-full flex items-start lg:items-center ">
           <TitleCard title="Oversized T-shirts" />

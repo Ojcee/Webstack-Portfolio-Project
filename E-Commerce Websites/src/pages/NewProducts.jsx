@@ -6,7 +6,6 @@ import Select from "react-select";
 import { BsFilter } from "react-icons/bs";
 import { logToBugfender } from "../utils/Bugfender";
 
-
 const NewProducts = () => {
   const { tag } = useParams();
   const { category } = useParams();
@@ -26,7 +25,7 @@ const NewProducts = () => {
   const handleFilterChange = (filter) => {
     setSelectedFilters({ ...selectedFilters, ...filter });
 
-    logToBugfender('Products Component', 'Filter changed:', {
+    logToBugfender("Products Component", "Filter changed:", {
       filter,
     });
   };
@@ -75,9 +74,7 @@ const NewProducts = () => {
 
   return (
     <>
-      <SEO
-        title={`Online Shopping for ${category} Fashion - Euphoria`}
-      />
+      <SEO title={`Online Shopping for ${category} Fashion -OjceeNiches`} />
       <main>
         <section className="w-full h-full flex flex-col items-start justify-start px-5 xl:px-10 py-10 gap-10 ">
           <header className="w-full h-full flex items-start lg:items-center ">
@@ -133,7 +130,11 @@ const NewProducts = () => {
           </section>
         </section>
         {openFilter && (
-          <section className={`absolute top-0 right-0 bottom-0 left-0 w-[50%] sm:w-[50%] md:w-[40%] lg:w-[30%] h-fit overflow-scroll bg-white shadow-lg rounded ${openFilter? "slide-right" : "slide-left"} `}>
+          <section
+            className={`absolute top-0 right-0 bottom-0 left-0 w-[50%] sm:w-[50%] md:w-[40%] lg:w-[30%] h-fit overflow-scroll bg-white shadow-lg rounded ${
+              openFilter ? "slide-right" : "slide-left"
+            } `}
+          >
             {/* <FilterCard
               category={category}
               setOpenFilter={setOpenFilter}

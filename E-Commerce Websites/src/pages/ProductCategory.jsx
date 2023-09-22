@@ -30,9 +30,7 @@ const ProductCategory = () => {
 
   return (
     <>
-      <SEO
-        title={`Online Shopping for ${category} Fashion - Euphoria`}
-      />
+      <SEO title={`Online Shopping for ${category} Fashion -OjceeNiches`} />
       <section className="w-full h-full flex flex-col items-start justify-start px-5 xl:px-10 py-10 gap-10 ">
         <header className="w-full h-full flex items-start lg:items-center ">
           <TitleCard title={`${tag} for ${category}`} />
@@ -56,7 +54,7 @@ const ProductCategory = () => {
           {sortedProductsByPrice(filteredProducts, sortBy).map((product) => (
             <main key={product.id}>
               <ProductCard
-               id={product.id}
+                id={product.id}
                 img={product.img}
                 title={product.title}
                 price={product.price}

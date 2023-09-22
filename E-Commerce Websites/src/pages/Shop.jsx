@@ -12,16 +12,14 @@ import {
 const Shop = () => {
   return (
     <>
-      <SEO
-        title="Online Shopping for Men, Women & Kids Fashion - Euphoria"
-      />
+      <SEO title="Online Shopping for Men, Women & Kids Fashion -OjceeNiches" />
       <main className="w-full h-full">
         <Hero />
         <NewArrivals />
         <BigSavingZone />
         <MenCategories />
         <WomenCategories />
-        <Brand/>
+        <Brand />
         <LimeLight />
       </main>
     </>

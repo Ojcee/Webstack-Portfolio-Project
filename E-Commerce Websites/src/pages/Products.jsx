@@ -41,7 +41,7 @@ const Products = () => {
   const handleFilterChange = (filter) => {
     setSelectedFilters({ ...selectedFilters, ...filter });
 
-    logToBugfender('Products Component', 'Filter changed:', {
+    logToBugfender("Products Component", "Filter changed:", {
       filter,
     });
   };
@@ -78,9 +78,7 @@ const Products = () => {
 
   return (
     <>
-      <SEO
-        title={`Online Shopping for ${category} Fashion - Euphoria`}  
-      />
+      <SEO title={`Online Shopping for ${category} Fashion -OjceeNiches`} />
       <main className="w-full h-full">
         <section className="w-full h-full flex flex-col items-start justify-start px-5 xl:px-10 py-10 gap-10 ">
           <header className="w-full h-full flex items-start lg:items-center ">
@@ -137,7 +135,11 @@ const Products = () => {
           </section>
         </section>
         {openFilter && (
-          <section className={`absolute top-0 right-0 bottom-0 left-0 w-[50%] sm:w-[50%] md:w-[40%] lg:w-[30%] h-screen overflow-scroll bg-white shadow-lg rounded ${openFilter? "slide-right" : "slide-left"} `}>
+          <section
+            className={`absolute top-0 right-0 bottom-0 left-0 w-[50%] sm:w-[50%] md:w-[40%] lg:w-[30%] h-screen overflow-scroll bg-white shadow-lg rounded ${
+              openFilter ? "slide-right" : "slide-left"
+            } `}
+          >
             {/* <FilterCard
               category={category}
               setOpenFilter={setOpenFilter}

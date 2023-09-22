@@ -38,7 +38,7 @@ const Footer = () => {
 
         <section className="w-full h-full flex items-center justify-center sm:justify-between flex-wrap border-t-[1px] border-t-white gap-5 pt-5 ">
           <h1 className="text-white text-sm font-normal">
-            Copyright&copy;2023 Euphoria Pvt Ltd. All rights reserved.
+            Copyright&copy;2023 OjceeNiches. All rights reserved.
           </h1>
           <div className="flex items-center justify-center gap-4 text-white">
             <a

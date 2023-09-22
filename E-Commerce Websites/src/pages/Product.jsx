@@ -79,7 +79,7 @@ const Product = () => {
   return (
     <>
     <SEO
-    title={`${title} - Euphoria`}
+    title={`${title} - OjceeNiches`}
     />
     <main className="w-full h-full flex flex-col items-start px-5 xl:px-10 py-10 gap-20">
       <section className="w-full h-full flex flex-col lg:flex-row items-start  lg:items-center justify-start gap-10 lg:gap-20">

@@ -48,9 +48,7 @@ const Search = () => {
 
   return (
     <main className="w-full h-full">
-      <SEO
-       title={`Online Shopping for ${query} - Euphoria`}
-      />
+      <SEO title={`Online Shopping for ${query} -OjceeNiches`} />
       <section className="w-full h-full flex flex-col items-start justify-start px-5 xl:px-10 py-10 gap-10 ">
         <header className="w-full h-full flex items-start justify-between lg:items-center ">
           <TitleCard title={`Search Results for ${query}`} />

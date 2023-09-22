@@ -1,36 +1,31 @@
-import Select from "react-select"
-import { ProductCard, SEO, TitleCard } from "../../components"
+import Select from "react-select";
+import { ProductCard, SEO, TitleCard } from "../../components";
 import { useState } from "react";
 import { products } from "../../data/data";
 
-
 const HawaiiShirts = () => {
-   const zone = "hawai"
-    const [sortBy, setSortBy] = useState("lowToHigh");
-  
-    const filteredProducts = products.filter(
-      (product) => product.zone === zone
-    );
-  
-    const sortedProductsByPrice = (products, sortBy) => {
-      const sortedProducts = [...products];
-      if (sortBy === "lowToHigh") {
-        sortedProducts.sort((a, b) => a.price - b.price);
-      } else if (sortBy === "highToLow") {
-        sortedProducts.sort((a, b) => b.price - a.price);
-      }
-      return sortedProducts;
-    };
-  
-    const sortOptions = [
-      { value: "lowToHigh", label: "Price: Low to High" },
-      { value: "highToLow", label: "Price: High to Low" },
-    ];
+  const zone = "hawai";
+  const [sortBy, setSortBy] = useState("lowToHigh");
+
+  const filteredProducts = products.filter((product) => product.zone === zone);
+
+  const sortedProductsByPrice = (products, sortBy) => {
+    const sortedProducts = [...products];
+    if (sortBy === "lowToHigh") {
+      sortedProducts.sort((a, b) => a.price - b.price);
+    } else if (sortBy === "highToLow") {
+      sortedProducts.sort((a, b) => b.price - a.price);
+    }
+    return sortedProducts;
+  };
+
+  const sortOptions = [
+    { value: "lowToHigh", label: "Price: Low to High" },
+    { value: "highToLow", label: "Price: High to Low" },
+  ];
   return (
     <>
-     <SEO
-        title={`Online Shopping for Hawai Beach Shirts - Euphoria`}
-      />
+      <SEO title={`Online Shopping for Hawai Beach Shirts -OjceeNiches`} />
       <section className="w-full h-full flex flex-col items-start justify-start px-5 xl:px-10 py-10 gap-10 ">
         <header className="w-full h-full flex items-start lg:items-center ">
           <TitleCard title="Hawaiian Shirts" />
@@ -54,7 +49,7 @@ const HawaiiShirts = () => {
           {sortedProductsByPrice(filteredProducts, sortBy).map((product) => (
             <main key={product.id}>
               <ProductCard
-               id={product.id}
+                id={product.id}
                 img={product.img}
                 title={product.title}
                 price={product.price}
@@ -65,7 +60,7 @@ const HawaiiShirts = () => {
         </section>
       </section>
     </>
-  )
-}
+  );
+};
 
-export default HawaiiShirts
+export default HawaiiShirts;
