@@ -1,4 +1,4 @@
-# Euphoria - An E-commerce Application
+# OjceeNiches - An E-commerce Application
 Euphoria is a modern and user-friendly Online Shopping Platform for Men, Women & Kid's Fashion. This frontend project is built using a combination of technologies and libraries including Vite, React, Tailwind CSS, React Router Dom, React Icons, Redux Toolkit, react-helmet-async, react-lazy-load-image-component, react-select, react-toastify, swiper, Canvas Confetti, Redux Persist, and bugfender/SDK.
 
 ## Features
@@ -35,7 +35,7 @@ Euphoria is a modern and user-friendly Online Shopping Platform for Men, Women &
 
 ## Installation
 
-1. Clone the repository: `git clone https://github.com/PrtHub/Euphoria-EcommerceApplication`
+1. Clone the repository: `https://github.com/Ojcee/Webstack-Portfolio-Project.git`
 2. Navigate to the project directory: `cd `
 3. Install dependencies: `npm install` or `yarn install`
 
