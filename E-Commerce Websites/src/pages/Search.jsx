@@ -33,8 +33,6 @@ const Search = () => {
 
     setSearchResults(filteredProducts);
 
-    console.log(searchResults);
-
     logToBugfender("Search Component", `Search query: ${searchQuery}`);
     logToBugfender(
       "Search Component",
