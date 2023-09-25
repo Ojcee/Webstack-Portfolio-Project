@@ -22,6 +22,7 @@ const Navbar = () => {
     }
   };
 
+
   const handleSearch = (e) => {
     e.preventDefault();
     if (searchQuery.length > 0) {

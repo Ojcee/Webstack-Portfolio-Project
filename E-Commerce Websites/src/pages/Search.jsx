@@ -25,13 +25,15 @@ const Search = () => {
         : "";
 
       return (
-        (tag === searchQuery.toLowerCase() ||
-          title === searchQuery.toLowerCase()) &&
+        (tag.includes(searchQuery.toLowerCase()) ||
+          title.includes(searchQuery.toLowerCase())) &&
         (category === "" || productCategory === category)
       );
     });
 
     setSearchResults(filteredProducts);
+
+    console.log(searchResults);
 
     logToBugfender("Search Component", `Search query: ${searchQuery}`);
     logToBugfender(
